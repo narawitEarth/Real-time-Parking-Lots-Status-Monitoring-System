@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-$databaseUrl = parse_url(env('DATABASE_URL'));
+
 return [
 
     /*
@@ -62,33 +62,21 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => $databaseUrl['host'],
-            'port' => $databaseUrl['port'],
-            'database' => substr($databaseUrl['path'], 1),
-            'username' => $databaseUrl['user'],
-            'password' => $databaseUrl['pass'],
+            'url' => 'postgres://fmzgvjhzkhtmjj:6b48e81209e4c25ff3b7c98cbc8a662026da9332e811546e5990e1043fec336d@ec2-3-231-46-238.compute-1.amazonaws.com:5432/d221s9usaeehfi',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-        // 'pgsql' => [
-        //     'driver' => 'pgsql',
-        //     'url' => env('DATABASE_URL'),
-        //     'host' => env('DB_HOST', '127.0.0.1'),
-        //     'port' => env('DB_PORT', '5432'),
-        //     'database' => env('DB_DATABASE', 'forge'),
-        //     'username' => env('DB_USERNAME', 'forge'),
-        //     'password' => env('DB_PASSWORD', ''),
-        //     'charset' => 'utf8',
-        //     'prefix' => '',
-        //     'prefix_indexes' => true,
-        //     'schema' => 'public',
-        //     'sslmode' => 'prefer',
-        // ],
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
