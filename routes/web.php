@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('view','tarcontroller@view')->name('project.view');;
+Route::get('/','tarcontroller@view')->name('project.view');;
 Route::get('view2','tarcontroller@view2')->name('project.view2');;
 
