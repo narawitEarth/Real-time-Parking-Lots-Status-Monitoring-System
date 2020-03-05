@@ -13,9 +13,9 @@ class tarcontroller extends Controller
         ]);
     }
     function view2(){
-        $parking = project::orderBy('id','desc')->limit(1)->get();
+        $parking2 = project2::orderBy('id','desc')->limit(1)->get();
         return view('view2',[
-            'park2' => $parking
+            'park2' => $parking2
         ]);
     }
 }
