@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\project;
+use App\project2;
 use Illuminate\Http\Request;
 
 class tarcontroller extends Controller
