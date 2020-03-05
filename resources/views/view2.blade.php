@@ -113,14 +113,14 @@
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
 </div>
-@foreach ($park2 as $p)
+@foreach ($park2 as $p2)
 <div class="container-fluid bg-1 text-center "id="vd">
   <h1 class="margin">ลานจอดรถหอพักอาทาด้า 2</h1>
   <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
   {{-- <img name="main" id="main" width="800" height="450" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
-    <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
+    <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p2->detect}}</h3>
     <div>
             <body onload="startTime()">
                 <div id="txt"></div></body>
