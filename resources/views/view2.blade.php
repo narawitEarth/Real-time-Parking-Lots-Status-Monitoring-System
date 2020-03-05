@@ -113,7 +113,7 @@
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
 </div>
-@foreach ($park as $p)
+@foreach ($park2 as $p)
 <div class="container-fluid bg-1 text-center "id="vd">
   <h1 class="margin">ลานจอดรถหอพักอาทาด้า 2</h1>
   <video width="700" height="400" autoplay="autoplay">
