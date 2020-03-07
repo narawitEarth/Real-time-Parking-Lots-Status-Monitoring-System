@@ -20,7 +20,7 @@
   }
   @media screen and (min-width: 600px) {
     body{
-    font-size: 80px;
+    font-size: 30%;
   }
 }
   p {font-size: 16px;}
