@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="{{ asset('css/view.css') }}" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
       body {
@@ -83,9 +84,65 @@
 .sidenav a:hover {
   color: #064579;
 }
-
-
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
   </style>
+ <script>
+    $(document).ready(function () {
+
+   var request = function () {
+   $.ajax({
+       type: 'get',
+       url: "{{ route('project.fetchData') }}",
+       data: { id: lastId }, //Add request data
+       dataType: 'json',
+       success: function (data) {
+           $.each(data, function () {
+               $.each(this, function (index, value) {
+                   console.log(value);
+                   lastId = value.id; //Change lastId when we get responce from ajax
+                   $('#activity').append('' +
+                       '<div class="sl-item">' +
+                       '<div class="desc">' + value.detect + '</div>' +
+                       '</div>' +
+                       '</div>');
+
+               });
+           });
+       }, error: function () {
+           console.log(data);
+       }
+   });
+   };
+  setInterval(request, 1000);
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+    setInterval(function(){
+        $.ajax({
+        url: "/fetch-data",
+        success: function( response ) {
+            // update div
+        }
+        });
+    },1000);
+    });
+</script>
 </head>
 <body>
 
@@ -115,6 +172,7 @@
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
 </div>
+
 @foreach ($park as $p)
 <div class="container-fluid bg-1 text-center" id="vd">
   <h1 class="margin">ลานจอดรถหอพักอาทาด้า 1</h1>
@@ -122,6 +180,7 @@
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
+    <h1 id="activity"></h1>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>

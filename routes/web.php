@@ -13,3 +13,5 @@
 Route::get('/','tarcontroller@view')->name('project.view');;
 Route::get('view2','tarcontroller@view2')->name('project.view2');;
 
+Route::get('/fetch-data','tarcontroller@fetchData')->name('project.fetchData');;
+//Route::get('/fetch-data', 'PageController@fetchData');

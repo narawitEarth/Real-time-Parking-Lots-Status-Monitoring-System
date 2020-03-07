@@ -19,4 +19,13 @@ class tarcontroller extends Controller
             'park2' => $parking2
         ]);
     }
+
+    function fetchData(){
+        $parkingA = project::orderBy('id','desc')->limit(1)->get();
+        // return view('view',[
+        //     'park' => $parkingA
+        // ]);
+        return response()->json($parkingA);
+
+    }
 }
