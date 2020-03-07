@@ -13,47 +13,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-      @media screen and (min-width: 600px){
       body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
   }
-}
-@media screen and (min-width: 600px){
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
-}
-@media screen and (min-width: 600px){
   .bg-1 {
     background-color:#48997e; /* Green */
     color: #ffffff;
   }
-}
-@media screen and (min-width: 600px){
   .bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
   }
-}
-@media screen and (min-width: 600px){
   .bg-3 {
     background-color: #ffffff; /* White */
     color: white;
   }
-}
-@media screen and (min-width: 600px){
   .bg-4 {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
   }
-}
-@media screen and (min-width: 600px){
   .container-fluid {
     padding-top: 25px;
     padding-bottom: 65px;
   }
-}
 #navbar {
   background-color: white;
 }
@@ -65,24 +51,17 @@
   padding: 14px;
   text-decoration: none;
 }
-@media screen and (min-width: 600px){
 .content {
   padding: 10px;
 }
-}
-@media screen and (min-width: 600px){
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-}
-@media screen and (min-width: 600px){
 .sticky + .content {
   padding-top: 60px;
 }
-}
-@media screen and (min-width: 600px){
 .sidenav {
   width: 150px;
   position: fixed;
@@ -93,8 +72,7 @@
   overflow-x: hidden;
   padding: 8px 0;
 }
-}
-@media screen and (min-width: 600px){
+
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -102,11 +80,9 @@
   color: black;
   display: block;
 }
-}
-@media screen and (min-width: 600px){
+
 .sidenav a:hover {
   color: #064579;
-}
 }
 
   </style>
