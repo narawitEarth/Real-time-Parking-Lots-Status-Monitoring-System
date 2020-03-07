@@ -18,6 +18,11 @@
     line-height: 1.8;
     color: #f5f6f7;
   }
+  @media screen and (min-width: 600px) {
+    body{
+    font-size: 80px;
+  }
+}
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 {
