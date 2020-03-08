@@ -89,8 +89,8 @@
   </style>
   <script>
     $.ajax({
-             type:"POST",
-             url:"/calc_list/"+id,
+             type:"GET",
+             url:'/fetch-data',
              success : function(results) {
                  var $table = $('<table></table>');
                  $('#destination').html('');
