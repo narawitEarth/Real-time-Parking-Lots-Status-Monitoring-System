@@ -147,7 +147,7 @@
             },
         success: function( response ) {
             console.log(dataResult);
-                var resultData = dataResult.park;
+                var resultData = dataResult.data;
                 var bodyData = '';
                 $.each(resultData,function(index,row){
                     bodyData+="<tr>"
