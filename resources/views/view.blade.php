@@ -142,9 +142,12 @@
         type: 'get',
         url:"{{ route('project.fetchData') }}",
         dataType: 'json',
+        data:{
+                _token:'{{ csrf_token() }}'
+            },
         success: function( response ) {
             console.log(dataResult);
-                var resultData = dataResult.data;
+                var resultData = dataResult.park;
                 var bodyData = '';
                 $.each(resultData,function(index,row){
                     bodyData+="<tr>"
