@@ -26,6 +26,5 @@ class tarcontroller extends Controller
         //     'park' => $parkingA
         // ]);
         return response()->json($parkingA);
-
     }
 }

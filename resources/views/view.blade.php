@@ -92,7 +92,7 @@
    var request = function () {
    $.ajax({
        type: 'get',
-       url: "{{ route('project.fetchData') }}",
+       url: "{{route('project.fetchData')}}",
        data: { id: lastId }, //Add request data
        dataType: 'json',
        success: function (data) {
@@ -100,11 +100,8 @@
                $.each(this, function (index, value) {
                    console.log(value);
                    lastId = value.id; //Change lastId when we get responce from ajax
-                   $('#activity').append('' +
-                       '<div class="sl-item">' +
-                       '<div class="desc">' + value.detect + '</div>' +
-                       '</div>' +
-                       '</div>');
+                   $('#activity').append(
+                       '<h1>' + value.detect + '</h1>');
 
                });
            });
@@ -116,19 +113,19 @@
   setInterval(request, 1000);
 });
 </script>
-
+{{--
 <script>
     $(document).ready(function(){
     setInterval(function(){
         $.ajax({
-        url: "/fetch-data",
+        url:"{{ route('project.fetchData') }}",
         success: function( response ) {
             // update div
         }
         });
     },1000);
     });
-</script>
+</script> --}}
 </head>
 <body>
 
@@ -157,6 +154,7 @@
 <div class="sidenav">
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
+  <h1 id="activity"></h1>
 </div>
 
 @foreach ($park as $p)
@@ -166,7 +164,7 @@
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
-    <h1 id="activity"></h1>
+    {{-- <h1 id="activity"></h1> --}}
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>
