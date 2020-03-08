@@ -139,13 +139,13 @@
     $(document).ready(function(){
     setInterval(function(){
         $.ajax({
+        type: 'get',
         url:"{{ route('project.fetchData') }}",
         dataType: 'json',
         success: function( response ) {
             console.log(dataResult);
                 var resultData = dataResult.data;
                 var bodyData = '';
-                var i=1;
                 $.each(resultData,function(index,row){
                     bodyData+="<tr>"
                     bodyData+="<td>"+row.detect+"</td>";
