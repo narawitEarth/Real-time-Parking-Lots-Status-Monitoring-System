@@ -134,19 +134,30 @@
   setInterval(request, 1000);
 });
 </script> --}}
-{{--
+
 <script>
     $(document).ready(function(){
     setInterval(function(){
         $.ajax({
         url:"{{ route('project.fetchData') }}",
+        dataType: 'json',
         success: function( response ) {
-            // update div
+            console.log(dataResult);
+                var resultData = dataResult.data;
+                var bodyData = '';
+                var i=1;
+                $.each(resultData,function(index,row){
+                    bodyData+="<tr>"
+                    bodyData+="<td>"+row.detect+"</td>";
+                    bodyData+="</tr>";
+
+                })
+                $("#bodyData").append(bodyData);
         }
         });
     },1000);
     });
-</script> --}}
+</script>
 </head>
 <body>
 
@@ -171,43 +182,16 @@
   </div>
 </nav>
 
-<script>
-    $(document).ready(function() {
-        // var url = "{{URL('')}}";
-        $.ajax({
-            url: '{{ route('project.fetchData') }}',
-            type: "POST",
-            data:{
-                _token:'{{ csrf_token() }}'
-            },
-            cache: false,
-            dataType: 'json',
-            success: function(dataResult){
-                console.log(dataResult);
-                var resultData = dataResult.data;
-                var bodyData = '';
-                var i=1;
-                $.each(resultData,function(index,row){
-                    bodyData+="<tr>"
-                    bodyData+="<td>"+row.detect+"</td>";
-                    bodyData+="</tr>";
-
-                })
-                $("#bodyData").append(bodyData);
-            }
-            error: function(jqXHR, textStatus, errorThrown) { // What to do if we fail
-        console.log(JSON.stringify(jqXHR));
-        console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
-    }
-        });
-
-});
-</script>
 
 <!-- First Container -->
 <div class="sidenav">
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
+</div>
+
+@foreach ($park as $p)
+<div class="container-fluid bg-1 text-center" id="vd">
+  <h1 class="margin">ลานจอดรถหอพักอาทาด้า 1</h1>
   <table >
     <thead>
      <tr>
@@ -217,14 +201,6 @@
     <tbody id="bodyData">
     </tbody>
  </table>
-  <h1 id="bodyData"></h1>
-  {{-- <div id="activity"></div>
-  <div id="destination"></div> --}}
-</div>
-
-@foreach ($park as $p)
-<div class="container-fluid bg-1 text-center" id="vd">
-  <h1 class="margin">ลานจอดรถหอพักอาทาด้า 1</h1>
   <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
