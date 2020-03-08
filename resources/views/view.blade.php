@@ -87,7 +87,7 @@
 }
 
   </style>
-  <script>
+  {{-- <script>
     $.ajax({
              type:"GET",
              url:'/fetch-data',
@@ -133,7 +133,7 @@
    };
   setInterval(request, 1000);
 });
-</script>
+</script> --}}
 {{--
 <script>
     $(document).ready(function(){
@@ -171,13 +171,51 @@
   </div>
 </nav>
 
+<script>
+    $(document).ready(function() {
+        var url = "{{URL('')}}";
+        $.ajax({
+            url: "/fetch-data",
+            type: "POST",
+            data:{
+                _token:'{{ csrf_token() }}'
+            },
+            cache: false,
+            dataType: 'json',
+            success: function(dataResult){
+                console.log(dataResult);
+                var resultData = dataResult.data;
+                var bodyData = '';
+                var i=1;
+                $.each(resultData,function(index,row){
+                    bodyData+="<tr>"
+                    bodyData+="<td>"+row.detect+"</td>";
+                    bodyData+="</tr>";
+
+                })
+                $("#bodyData").append(bodyData);
+            }
+        });
+
+});
+</script>
+
 <!-- First Container -->
 <div class="sidenav">
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
-  <h1 id="activity"></h1>
-  <div id="activity"></div>
-  <div id="destination"></div>
+  <table >
+    <thead>
+     <tr>
+         <th>No</th>
+     </tr>
+    </thead>
+    <tbody id="bodyData">
+    </tbody>
+ </table>
+  <h1 id="bodyData"></h1>
+  {{-- <div id="activity"></div>
+  <div id="destination"></div> --}}
 </div>
 
 @foreach ($park as $p)
