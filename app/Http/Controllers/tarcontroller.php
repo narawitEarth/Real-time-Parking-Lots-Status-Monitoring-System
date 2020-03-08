@@ -26,10 +26,10 @@ class tarcontroller extends Controller
         // return view('view',[
         //     'park' => $parkingA
         // ]);
-        #return json_encode(array('parkA'=>$parkingA));
+        return json_encode(array('parkA'=>$parkingA));
         #return Response::json($parkingA);
         #return response()->json(array('park' => $parkingA), 200);
-        return response()->json(array('park' => $parkingA));
+        #return response()->json(array('park' => $parkingA));
     }
 
 }
