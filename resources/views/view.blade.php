@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="{{ asset('css/view.css') }}" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
 
   <style>
       body {
@@ -86,10 +87,30 @@
 }
 
   </style>
+  <script>
+    $.ajax({
+             type:"POST",
+             url:"/calc_list/"+id,
+             success : function(results) {
+                 var $table = $('<table></table>');
+                 $('#destination').html('');
+
+                 for(var i=0;i<=results.length;i++) {
+                     $table.append('<tr><td>No</td><td>'+results[i].detect+'</td></tr>');
+                 }
+                 $('#destination').append($table);
+             }
+        }); </script>
+
  <script>
     $(document).ready(function () {
 
    var request = function () {
+    $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+    });
    $.ajax({
        type: 'get',
        url: "{{route('project.fetchData')}}",
@@ -155,6 +176,8 @@
   <a href="{{route('project.view')}}">ATADA LOT1</a>
   <a href="{{route('project.view2')}}">ATADA LOT2</a>
   <h1 id="activity"></h1>
+  <div id="activity"></div>
+  <div id="destination"></div>
 </div>
 
 @foreach ($park as $p)

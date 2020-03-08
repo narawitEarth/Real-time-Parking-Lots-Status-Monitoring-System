@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\project;
 use App\project2;
 use Illuminate\Http\Request;
+use Response;
 
 class tarcontroller extends Controller
 {
@@ -25,6 +26,9 @@ class tarcontroller extends Controller
         // return view('view',[
         //     'park' => $parkingA
         // ]);
-        return response()->json($parkingA);
+        return Response::json($parkingA);
+        #return response()->json(array('park' => $parkingA), 200);
+        #return response()->json( $parkingA, 200, $headers);
+        #return response()->json(array('park' => $parkingA));
     }
 }
