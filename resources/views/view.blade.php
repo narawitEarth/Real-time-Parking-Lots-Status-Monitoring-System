@@ -186,9 +186,6 @@
   <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
-  <h1 id="activity"></h1>
-  <div id="activity"></div>
-  <div id="destination"></div>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     {{-- <h1 id="activity"></h1> --}}
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
