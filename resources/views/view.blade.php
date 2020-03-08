@@ -173,7 +173,7 @@
 
 <script>
     $(document).ready(function() {
-        var url = "{{URL('')}}";
+        // var url = "{{URL('')}}";
         $.ajax({
             url: "/fetch-data",
             type: "POST",
