@@ -175,7 +175,7 @@
     $(document).ready(function() {
         // var url = "{{URL('')}}";
         $.ajax({
-            url: "/fetch-data",
+            url: '{{ route('project.fetchData') }}',
             type: "POST",
             data:{
                 _token:'{{ csrf_token() }}'
@@ -195,6 +195,10 @@
                 })
                 $("#bodyData").append(bodyData);
             }
+            error: function(jqXHR, textStatus, errorThrown) { // What to do if we fail
+        console.log(JSON.stringify(jqXHR));
+        console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
+    }
         });
 
 });
