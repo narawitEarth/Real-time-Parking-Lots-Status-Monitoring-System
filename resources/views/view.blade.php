@@ -10,8 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="{{ asset('css/view.css') }}" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="csrf-token" content="{{ csrf_token() }}" />
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <style>
       body {
@@ -85,83 +84,8 @@
 .sidenav a:hover {
   color: #064579;
 }
-
   </style>
-  {{-- <script>
-    $.ajax({
-             type:"GET",
-             url:'/fetch-data',
-             success : function(results) {
-                 var $table = $('<table></table>');
-                 $('#destination').html('');
-
-                 for(var i=0;i<=results.length;i++) {
-                     $table.append('<tr><td>No</td><td>'+results[i].detect+'</td></tr>');
-                 }
-                 $('#destination').append($table);
-             }
-        }); </script>
-
- <script>
-    $(document).ready(function () {
-
-   var request = function () {
-    $.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-    });
-   $.ajax({
-       type: 'get',
-       url: "{{route('project.fetchData')}}",
-       data: { id: lastId }, //Add request data
-       dataType: 'json',
-       success: function (data) {
-           $.each(data, function () {
-               $.each(this, function (index, value) {
-                   console.log(value);
-                   lastId = value.id; //Change lastId when we get responce from ajax
-                   $('#activity').append(
-                       '<h1>' + value.detect + '</h1>');
-
-               });
-           });
-       }, error: function () {
-           console.log(data);
-       }
-   });
-   };
-  setInterval(request, 1000);
-});
-</script> --}}
-
-<script>
-    $(document).ready(function(){
-    setInterval(function(){
-        $.ajax({
-        type: 'get',
-        url:"{{ route('project.fetchData') }}",
-        dataType: 'json',
-        data:{
-                _token:'{{ csrf_token() }}'
-            },
-        success: function( response ) {
-            console.log(dataResult);
-                var resultData = dataResult.data;
-                var bodyData = '';
-                $.each(resultData,function(index,row){
-                    bodyData+="<tr>"
-                    bodyData+="<td>"+row.detect+"</td>";
-                    bodyData+="</tr>";
-
-                })
-                $("#bodyData").append(bodyData);
-        }
-        });
-    },1000);
-    });
-</script>
-</head>
+ </head>
 <body>
 
 <!-- Navbar -->
@@ -185,7 +109,6 @@
   </div>
 </nav>
 
-
 <!-- First Container -->
 <div class="sidenav">
   <a href="{{route('project.view')}}">ATADA LOT1</a>
@@ -195,20 +118,11 @@
 @foreach ($park as $p)
 <div class="container-fluid bg-1 text-center" id="vd">
   <h1 class="margin">ลานจอดรถหอพักอาทาด้า 1</h1>
-  <table >
-    <thead>
-     <tr>
-         <th>No</th>
-     </tr>
-    </thead>
-    <tbody id="bodyData">
-    </tbody>
- </table>
   <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
-    {{-- <h1 id="activity"></h1> --}}
+    <h1 id="activity"></h1>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>
