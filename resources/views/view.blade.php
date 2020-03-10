@@ -179,9 +179,9 @@
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     <h1 id="activity"></h1>
     <input type='button' value='Fetch all records' id='but_fetchall'>
-<table id='userTable'>
+    <table id='userTable'>
      <thead>
-      <tr>
+      <tr class="container-fluid bg-1 text-center">
         <th>S.no</th>
         <th>Username</th>
         <th>Name</th>
@@ -189,7 +189,7 @@
       </tr>
      </thead>
      <tbody></tbody>
- </table>
+    </table>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>
