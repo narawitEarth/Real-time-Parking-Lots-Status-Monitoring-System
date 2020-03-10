@@ -137,12 +137,13 @@
     <h1 id="activity"></h1>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
-    <div>
+    <body>
         <div id = 'msg'>This message will be replaced using Ajax.
-            Click the button to replace the message.</div>
-         <?php
-            echo Form::button('Replace Message',['onClick'=>'getMessage()']);
-         ?>
+           Click the button to replace the message.</div>
+        <?php
+           echo Form::button('Replace Message',['onClick'=>'getMessage()']);
+        ?>
+     </body>
     <body onload="startTime()">
         <div id="txt"></div></body>
     <p id="date"></p>
