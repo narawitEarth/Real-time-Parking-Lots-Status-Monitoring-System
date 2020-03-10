@@ -179,7 +179,7 @@
     <table id='userTable'>
      <thead>
       <tr>
-        <th class="container-fluid bg-1 text-center">Detect</th>
+        <th class="container-fluid bg-1 text-center " color="black ">Detect</th>
       </tr>
      </thead>
      <tbody class="container-fluid bg-1 text-center"></tbody>
