@@ -174,12 +174,12 @@
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
-    <h1 id="activity"></h1>
-    <input type='button' value='SHITTY BUTTON' id='but_fetchall'>
+    {{-- <h1 id="activity"></h1> --}}
+    <input type='button' value='SHITTY BUTTON' id='but_fetchall' color='black'>
     <table id='userTable'>
      <thead>
       <tr>
-        <th class="container-fluid bg-1 text-center " color="black ">Detect</th>
+        <th>Detect</th>
       </tr>
      </thead>
      <tbody class="container-fluid bg-1 text-center"></tbody>
