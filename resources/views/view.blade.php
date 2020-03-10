@@ -183,7 +183,7 @@
         <th>จำนวนที่จอดรถทั้งหมด 8</th>
       </tr>
      </thead>
-     <tbody class="p"></tbody>
+     <tbody class="p" style="color:#2f2f2f font-size:20%"></tbody>
     </table>
     {{-- <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}<tbody></tbody></h3> --}}
     {{-- <h4>{{$p->time}}</h4> --}}
