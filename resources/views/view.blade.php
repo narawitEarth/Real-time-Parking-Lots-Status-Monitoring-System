@@ -121,7 +121,7 @@
            }
          }else if(response['data'] != null){
             var tr_str = "<tr>" +
-                "<td align='center'>1</td>" +
+                "<td align='center'>จำนวนที่จอดรถทั้งหมด 8 ที่ว่างทั้งหมด</td>" +
                 "<td align='center'>" + response['data'].detect + "</td>" +
             "</tr>";
 
@@ -185,7 +185,7 @@
      </thead>
      <tbody class="p"></tbody>
     </table>
-    <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}<tbody></tbody></h3>
+    {{-- <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}<tbody></tbody></h3> --}}
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>
     <body onload="startTime()">
