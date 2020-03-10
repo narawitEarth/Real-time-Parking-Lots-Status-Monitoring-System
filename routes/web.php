@@ -14,6 +14,7 @@ Route::get('/','tarcontroller@view')->name('project.view');;
 Route::get('view2','tarcontroller@view2')->name('project.view2');;
 
 // Route::get('/fetch-data','tarcontroller@fetchData')->name('project.fetchData');;
-Route::post('/fetch-data','tarcontroller@fetchData')->name('project.fetchData');
-
+Route::get('/post-data','tarcontroller@postData')->name('postData');
+// Route::post('/post-data','tarcontroller@postData')->name('postData');
 // Route::resource('/view','tarcontroller');
+

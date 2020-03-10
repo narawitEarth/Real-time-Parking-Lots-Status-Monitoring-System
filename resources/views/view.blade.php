@@ -85,9 +85,74 @@
   color: #064579;
 }
   </style>
-<script>
+<input type='button' value='Fetch all records' id='but_fetchall'>
+<table id='userTable'>
+     <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+     </thead>
+     <tbody></tbody>
+ </table>
 
-</script>
+ <script type='text/javascript'>
+   $(document).ready(function(){
+
+     // Fetch all records
+     $('#but_fetchall').click(function(){
+   fetchRecords();
+     });
+
+
+   });
+
+   function fetchRecords(){
+     $.ajax({
+       url: 'post-data/',
+       type: 'get',
+       dataType: 'json',
+       success: function(response){
+
+         var len = 0;
+         $('#userTable tbody').empty(); // Empty <tbody>
+         if(response['data'] != null){
+           len = response['data'].length;
+         }
+
+         if(len > 0){
+           for(var i=0; i<len; i++){
+             var id = response['data'][i].id;
+             var detect = response['data'][i].detect;
+
+             var tr_str = "<tr>" +
+                 "<td align='center'>" + (i+1) + "</td>" +
+                 "<td align='center'>" + detect + "</td>" +
+             "</tr>";
+
+             $("#userTable tbody").append(tr_str);
+           }
+         }else if(response['data'] != null){
+            var tr_str = "<tr>" +
+                "<td align='center'>1</td>" +
+                "<td align='center'>" + response['data'].detect + "</td>" +
+            "</tr>";
+
+            $("#userTable tbody").append(tr_str);
+         }else{
+            var tr_str = "<tr>" +
+                "<td align='center' colspan='4'>No record found.</td>" +
+            "</tr>";
+
+            $("#userTable tbody").append(tr_str);
+         }
+
+       }
+     });
+   }
+   </script>
 </head>
 <body>
 
