@@ -121,8 +121,8 @@
            }
          }else if(response['data'] != null){
             var tr_str = "<tr>" +
-                "<td align='center'>จำนวนที่จอดรถทั้งหมด 8 ที่ว่างทั้งหมด</td>" +
-                "<td align='center'>" + response['data'].detect + "</td>" +
+                "<td align='center'></td>" +
+                "<td align='center'><h1>"+response['data'].detect +"</h1></td>" +
             "</tr>";
 
             $("#userTable tbody").append(tr_str);
