@@ -182,9 +182,9 @@
         <th>Detect</th>
       </tr>
      </thead>
-     <tbody class="container-fluid bg-1 text-center"></tbody>
+     <tbody></tbody>
     </table>
-    <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
+    <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}<tbody></tbody></h3>
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>
     <body onload="startTime()">
