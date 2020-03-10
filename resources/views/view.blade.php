@@ -85,18 +85,7 @@
   color: #064579;
 }
   </style>
-<script>
-    function getMessage() {
-            $.ajax({
-               type:'POST',
-               url:'/getmsg',
-               data:'_token = <?php echo csrf_token() ?>',
-               success:function(data) {
-                  $("#msg").html(data.msg);
-               }
-            });
-         }
- </script>
+
 </head>
 <body>
 
