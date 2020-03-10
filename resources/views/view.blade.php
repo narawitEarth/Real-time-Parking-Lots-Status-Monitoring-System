@@ -170,7 +170,7 @@
 
 @foreach ($park as $p)
 <div class="container-fluid bg-1 text-center" id="vd">
-  <h1 class="margin" style="font-size:2cm">ลานจอดรถหอพักอาทาด้า 1</h1>
+  <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพักอาทาด้า 1</h1>
   <video width="500" height="300" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
