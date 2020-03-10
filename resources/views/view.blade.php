@@ -114,7 +114,7 @@
              var detect = response['data'][i].detect;
 
              var tr_str = "<tr>" +
-                 "<td align='center'>สวัสดีครับ" + detect + "</td>" +
+                 "<td align='center'>จำนวนที่จอดรถ 8 ว่างจำนวน " + detect + " ครับ</td>" +
              "</tr>";
 
              $("#userTable tbody").append(tr_str);
@@ -122,7 +122,7 @@
          }else if(response['data'] != null){
             var tr_str = "<tr>" +
                 "<td align='center'></td>" +
-                "<td align='center'>ข้อความพิมตรงนี้เลยก่อนปิดดับเบิ้ลโค้ต"+response['data'].detect +"</td>" +
+                "<td align='center'>"+response['data'].detect +"</td>" +
             "</tr>";
 
             $("#userTable tbody").append(tr_str);
@@ -177,10 +177,10 @@
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     {{-- <h1 id="activity"></h1> --}}
     {{-- <input type='button' value='SHITTY BUTTON' id='but_fetchall' > --}}
-    <table id='userTable'class="container-fluid bg-1 text-center" style="font-size:10ch">
+    <table id='userTable'class="container-fluid bg-1 text-center" style="font-size:5ch">
      <thead>
       <tr>
-        <th>จำนวนที่จอดรถทั้งหมด 8</th>
+        <th></th>
       </tr>
      </thead>
      <tbody></tbody>
