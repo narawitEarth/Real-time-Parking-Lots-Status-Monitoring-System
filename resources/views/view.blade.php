@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="{{ asset('css/view.css') }}" rel="stylesheet">
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
   <style>
       body {
@@ -85,7 +85,19 @@
   color: #064579;
 }
   </style>
- </head>
+<script>
+    function getMessage() {
+       $.ajax({
+          type:'POST',
+          url:'/getmsg',
+          data:'_token = <?php echo csrf_token() ?>',
+          success:function(data) {
+             $("#msg").html(data.msg);
+          }
+       });
+    }
+ </script>
+</head>
 <body>
 
 <!-- Navbar -->
@@ -126,11 +138,23 @@
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
     <div>
+        <div id = 'msg'>This message will be replaced using Ajax.
+            Click the button to replace the message.</div>
+         <?php
+            echo Form::button('Replace Message',['onClick'=>'getMessage()']);
+         ?>
     <body onload="startTime()">
         <div id="txt"></div></body>
     <p id="date"></p>
     </div>
     {{-- <img name="main" id="main" width="800" height="450" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<script>
+
+</script>
 </div>
 @endforeach
 <!-- Second Container -->
