@@ -179,10 +179,10 @@
     <table id='userTable'>
      <thead>
       <tr>
-        <th>Detect</th>
+        <th class="container-fluid bg-1 text-center">Detect</th>
       </tr>
      </thead>
-     <tbody></tbody>
+     <tbody class="container-fluid bg-1 text-center"></tbody>
     </table>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
