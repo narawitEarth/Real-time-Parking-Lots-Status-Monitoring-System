@@ -18,6 +18,7 @@
     line-height: 1.8;
     color: #f5f6f7;
   }
+
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 {
@@ -179,11 +180,10 @@
     <table id='userTable'>
      <thead>
       <tr>
-        <th>Detect</th>
+        <th>จำนวนที่จอดรถทั้งหมด 8</th>
       </tr>
      </thead>
-     <tbody></tbody>
-     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}<tbody></tbody></h3>
+     <tbody class="p"></tbody>
     </table>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}<tbody></tbody></h3>
     {{-- <h4>{{$p->time}}</h4> --}}
