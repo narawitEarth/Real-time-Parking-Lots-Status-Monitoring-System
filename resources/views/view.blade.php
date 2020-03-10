@@ -10,7 +10,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="{{ asset('css/view.css') }}" rel="stylesheet">
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 
 
   <style>
@@ -138,13 +137,7 @@
     <h1 id="activity"></h1>
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p->detect}}</h3>
     {{-- <h4>{{$p->time}}</h4> --}}
-    <body>
-        <div id = 'msg'>This message will be replaced using Ajax.
-           Click the button to replace the message.</div>
-        <?php
-           echo Form::button('Replace Message',['onClick'=>'getMessage()']);
-        ?>
-     </body>
+    <div>
     <body onload="startTime()">
         <div id="txt"></div></body>
     <p id="date"></p>

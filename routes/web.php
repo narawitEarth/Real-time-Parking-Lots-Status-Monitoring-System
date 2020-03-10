@@ -17,7 +17,3 @@ Route::get('view2','tarcontroller@view2')->name('project.view2');;
 Route::post('/fetch-data','tarcontroller@fetchData')->name('project.fetchData');
 
 // Route::resource('/view','tarcontroller');
-Route::get('ajax',function() {
-    return view('message');
- });
- Route::post('/getmsg','AjaxController@index');
