@@ -171,13 +171,13 @@
 @foreach ($park as $p)
 <div class="container-fluid bg-1 text-center" id="vd">
   <h1 class="margin">ลานจอดรถหอพักอาทาด้า 1</h1>
-  <video width="700" height="400" autoplay="autoplay">
+  <video width="500" height="300" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     {{-- <h1 id="activity"></h1> --}}
     {{-- <input type='button' value='SHITTY BUTTON' id='but_fetchall' > --}}
-    <table id='userTable'class="container-fluid bg-1 text-center" style="font-size:1ch">
+    <table id='userTable'class="container-fluid bg-1 text-center" style="font-size:3ch">
      <thead>
       <tr>
         <th></th>
