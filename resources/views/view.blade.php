@@ -86,16 +86,7 @@
 }
   </style>
 <script>
-    function getMessage() {
-            $.ajax({
-               type:'POST',
-               url:'/getmsg',
-               data:'_token = <?php echo csrf_token() ?>',
-               success:function(data) {
-                  $("#msg").html(data.msg);
-               }
-            });
-         }
+
 </script>
 </head>
 <body>
@@ -151,13 +142,6 @@
 
 </script>
 </div>
-<body>
-    <div id = 'msg'>This message will be replaced using Ajax.
-       Click the button to replace the message.</div>
-    <?php
-       echo Form::button('Replace Message',['onClick'=>'getMessage()']);
-    ?>
- </body>
 @endforeach
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center" id="jq">
