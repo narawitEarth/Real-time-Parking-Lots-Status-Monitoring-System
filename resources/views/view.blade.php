@@ -181,7 +181,7 @@
     <input type='button' value='Fetch all records' id='but_fetchall'>
     <table id='userTable'>
      <thead>
-      <tr class="container-fluid bg-1 text-center">
+      <tr>
         <th>S.no</th>
         <th>Username</th>
         <th>Name</th>
