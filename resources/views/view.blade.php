@@ -176,8 +176,8 @@
   </video>
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     {{-- <h1 id="activity"></h1> --}}
-    <input type='button' value='SHITTY BUTTON' id='but_fetchall' >
-    <table id='userTable'>
+    {{-- <input type='button' value='SHITTY BUTTON' id='but_fetchall' > --}}
+    <table id='userTable'class="container-fluid bg-1 text-center">
      <thead>
       <tr>
         <th>จำนวนที่จอดรถทั้งหมด 8</th>
