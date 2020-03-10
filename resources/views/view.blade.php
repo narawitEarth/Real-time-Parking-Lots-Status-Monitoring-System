@@ -122,7 +122,7 @@
          }else if(response['data'] != null){
             var tr_str = "<tr>" +
                 "<td align='center'></td>" +
-                "<td align='center'><h1>ขณะนี้ว่าง: "+response['data'].detect +"</h1></td>" +
+                "<td align='center'><h1> ข้อความพิมตรงนี้เลยก่อนปิดดับเบิ้ลโค้ต"+response['data'].detect +"</h1></td>" +
             "</tr>";
 
             $("#userTable tbody").append(tr_str);
