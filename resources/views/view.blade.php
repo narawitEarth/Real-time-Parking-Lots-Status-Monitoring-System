@@ -114,7 +114,7 @@
              var detect = response['data'][i].detect;
 
              var tr_str = "<tr>" +
-                 "<td align='center'>" + detect + "</td>" +
+                 "<td align='center'>สวัสดีครับ" + detect + "</td>" +
              "</tr>";
 
              $("#userTable tbody").append(tr_str);
@@ -122,7 +122,7 @@
          }else if(response['data'] != null){
             var tr_str = "<tr>" +
                 "<td align='center'></td>" +
-                "<td align='center'><h1> ข้อความพิมตรงนี้เลยก่อนปิดดับเบิ้ลโค้ต"+response['data'].detect +"</h1></td>" +
+                "<td align='center'>ข้อความพิมตรงนี้เลยก่อนปิดดับเบิ้ลโค้ต"+response['data'].detect +"</td>" +
             "</tr>";
 
             $("#userTable tbody").append(tr_str);
