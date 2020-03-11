@@ -180,7 +180,7 @@
     <tbody></tbody>
    </table>
   {{-- <img name="main" id="main" width="800" height="450" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
-    <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p2->detect}}</h3>
+    {{-- <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p2->detect}}</h3> --}}
     <div>
             <body onload="startTime()">
                 <div id="txt"></div></body>
