@@ -29,5 +29,13 @@ class tarcontroller extends Controller
         echo json_encode($parkingA);
         exit;
     }
+    public function postData2(){
+        $parkingB['data'] = project2::orderBy('id','desc')->limit(1)->get();
+        // return view('view',[
+        //     'park' => $parking
+        // ]);
+        echo json_encode($parkingB);
+        exit;
+    }
 
 }

@@ -85,6 +85,57 @@
   color: #064579;
 }
   </style>
+  <script type='text/javascript'>
+    $(document).ready(function(){
+     setInterval(fetchRecords, 3000);
+      // Fetch all records
+ //      $('#but_fetchall').click(function(){
+   //  fetchRecords();
+ //      });
+    });
+
+    function fetchRecords(){
+      $.ajax({
+        url: 'post-data2/',
+        type: 'get',
+        dataType: 'json',
+        success: function(response){
+
+          var len = 0;
+          $('#userTable tbody').empty(); // Empty <tbody>
+          if(response['data'] != null){
+            len = response['data'].length;
+          }
+
+          if(len > 0){
+            for(var i=0; i<len; i++){
+              var detect = response['data'][i].detect;
+
+              var tr_str = "<tr>" +
+                  "<td align='center'>จำนวนที่จอดรถ 8 ว่างจำนวน " + detect + " ครับ</td>" +
+              "</tr>";
+
+              $("#userTable tbody").append(tr_str);
+            }
+          }else if(response['data'] != null){
+             var tr_str = "<tr>" +
+                 "<td align='center'></td>" +
+                 "<td align='center'>"+response['data'].detect +"</td>" +
+             "</tr>";
+
+             $("#userTable tbody").append(tr_str);
+          }else{
+             var tr_str = "<tr>" +
+                 "<td align='center' colspan='4'>No record found.</td>" +
+             "</tr>";
+
+             $("#userTable tbody").append(tr_str);
+          }
+          //setTimeout(update, 5000);
+        }
+      });
+    }
+    </script>
 </head>
 <body>
 
@@ -120,6 +171,14 @@
   <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
+  <table id='userTable'class="container-fluid bg-1 text-center" style="font-size:2ch">
+    <thead>
+     <tr>
+       <th></th>
+     </tr>
+    </thead>
+    <tbody></tbody>
+   </table>
   {{-- <img name="main" id="main" width="800" height="450" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     <h3>จำนวนที่จอดรถทั้งหมด 8 || จำวนวนที่ว่าง {{$p2->detect}}</h3>
     <div>
