@@ -112,7 +112,7 @@
               var detect = response['data'][i].detect;
 
               var tr_str = "<tr>" +
-                  "<td align='center'>จำนวนที่จอดรถ 8 ว่างจำนวน " + detect + " ครับ</td>" +
+                  "<td align='center'>จำนวนที่จอดรถ 3 ว่างจำนวน " + detect + " ครับ</td>" +
               "</tr>";
 
               $("#userTable tbody").append(tr_str);
@@ -167,7 +167,7 @@
 </div>
 @foreach ($park2 as $p2)
 <div class="container-fluid bg-1 text-center "id="vd">
-  <h1 class="margin">ลานจอดรถหอพักอาทาด้า 2</h1>
+  <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 2</h1>
   <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video>
