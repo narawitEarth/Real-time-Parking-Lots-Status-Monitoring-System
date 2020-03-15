@@ -168,7 +168,7 @@
 @foreach ($park2 as $p2)
 <div class="container-fluid bg-1 text-center "id="vd">
     <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 2</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7EJZ2Qae91I?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TojGjW1o1b0?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
   {{-- <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
