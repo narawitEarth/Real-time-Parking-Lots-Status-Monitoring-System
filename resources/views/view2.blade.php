@@ -169,9 +169,9 @@
 <div class="container-fluid bg-1 text-center "id="vd">
   <iframe width="560" height="315" src="https://youtu.be/iK8ICpCHaiw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 2</h1>
-  <video width="700" height="400" autoplay="autoplay">
+  {{-- <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
-  </video>
+  </video> --}}
   <table id='userTable'class="container-fluid bg-1 text-center" style="font-size:2ch">
     <thead>
      <tr>
