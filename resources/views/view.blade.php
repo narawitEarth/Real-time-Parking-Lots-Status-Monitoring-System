@@ -170,11 +170,11 @@
 
 @foreach ($park as $p)
 <div class="container-fluid bg-1 text-center" id="vd">
+    <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 1</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7EJZ2Qae91I?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1"" frameborder="0" allowfullscreen></iframe>
-  <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 1</h1>
-  <video width="500" height="300" autoplay="autoplay">
+  {{-- <video width="500" height="300" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
-  </video>
+  </video> --}}
   {{-- <img name="main" id="main" width="700" height="400" src="http://192.168.43.150:58545/videostream.cgi?user=admin&pwd=TApop123"> --}}
     {{-- <h1 id="activity"></h1> --}}
     {{-- <input type='button' value='SHITTY BUTTON' id='but_fetchall' > --}}
