@@ -92,7 +92,7 @@ color: #064579;
     iframe {
         /* max-width: 100% !important; */
         width: 590px !important;
-        height: 330px !important;
+        height: 350px !important;
     }
 }
 </style>
