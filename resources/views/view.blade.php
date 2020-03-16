@@ -58,7 +58,7 @@
   }
 
 #navbar {
-  background-color: black;
+  background-color: white;
 }
 
 @media only screen and (min-width: 600px){
