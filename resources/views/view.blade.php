@@ -176,10 +176,7 @@ color: #064579;
 <div class="sidenav">
   <a href="{{route('project.view')}}">ATADA LOT1 ||</a>
   <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
-  <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
-  <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
-  <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
-  <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
+
 </div>
 
 @foreach ($park as $p)
