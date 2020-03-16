@@ -174,14 +174,15 @@
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()"
     class="w3-bar-item w3-button">Close Menu</a>
-    <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+        <a href="{{route('project.view')}}">ATADA LOT1 ||</a>
+        <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
+
 </nav>
 <!-- First Container -->
-<div class="sidenav">
+{{-- <div class="sidenav">
   <a href="{{route('project.view')}}">ATADA LOT1 ||</a>
   <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
-</div>
+</div> --}}
 @foreach ($park2 as $p2)
 <div class="container-fluid bg-1 text-center "id="vd">
     <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 2</h1>
