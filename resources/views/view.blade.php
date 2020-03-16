@@ -230,7 +230,7 @@ color: #064579;
 
 <!-- Footer -->
 <footer class="container-fluid bg-2 text-center">
-  <p><a href=""></a></p>
+  <p><a href=""></a>สวัสดีครับบบ</p>
 </footer>
 
 
