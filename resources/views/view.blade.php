@@ -94,6 +94,12 @@ color: #064579;
         width: 590px !important;
         height: 315px !important;
     }
+}@media screen and (min-width: 600px) {
+    iframe ei {
+        /* max-width: 100% !important; */
+        width: 590px !important;
+        height: 400px !important;
+    }
 }
 </style>
 
@@ -224,7 +230,7 @@ color: #064579;
 <div class="container-fluid bg-3 text-center" id="map">
   <h1 style="color:#2f2f2f">แผนที่</h1>
 
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="350" height="300"></iframe>
+  <iframe id="ei" src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="350" height="300"></iframe>
   </div>
 </div>
 
