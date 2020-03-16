@@ -78,7 +78,7 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 15x;
+  font-size: 15px;
   color: black;
   display: block;
 }
@@ -123,7 +123,7 @@
               var detect = response['data'][i].detect;
 
               var tr_str = "<tr>" +
-                  "<td align='center'>จำนวนที่จอดรถ 3 ว่างจำนวน " + detect + " ครับ</td>" +
+                  "<td align='center'>จำนวนที่จอดรถ 3 ที่ว่าง " + detect + " </td>" +
               "</tr>";
 
               $("#userTable tbody").append(tr_str);
