@@ -160,7 +160,7 @@ color: #064579;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <a class="navbar-brand" href="{{route('project.view')}}">PARKING</a>
+    <a class="navbar-brand text-center" href="{{route('project.view')}}">PARKING</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
