@@ -94,12 +94,6 @@ color: #064579;
         width: 590px !important;
         height: 315px !important;
     }
-}@media screen and (min-width: 600px) {
-    iframe ei {
-        /* max-width: 100% !important; */
-        width: 590px !important;
-        height: 400px !important;
-    }
 }
 </style>
 
