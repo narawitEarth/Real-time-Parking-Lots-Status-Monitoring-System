@@ -56,11 +56,11 @@
     padding-bottom: 65px;
   }
   }
-  @media only screen and (min-width: 600px){
+
 #navbar {
-  background-color: white;
+  background-color: black;
 }
-}
+
 @media only screen and (min-width: 600px){
 #navbar a {
   float: left;
