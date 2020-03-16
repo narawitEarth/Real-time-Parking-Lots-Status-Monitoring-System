@@ -150,7 +150,6 @@
 </head>
 <body>
 <!-- Navbar -->
-<a class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</a>
 <nav class="navbar">
   <div class="container" id="navbar">
     <div class="navbar-header">
