@@ -249,8 +249,8 @@
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center" id="map">
   <h1 style="color:#2f2f2f">MAP</h1>
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o"></iframe>
-  {{-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="640" height="480"></iframe> --}}
+
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="350" height="300"></iframe>
   </div>
 </div>
 
