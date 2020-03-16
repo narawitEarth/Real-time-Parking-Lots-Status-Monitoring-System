@@ -114,6 +114,13 @@
   color: #064579;
 }
 }
+@media screen and (min-width: 750px) {
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
 </style>
 
  <script type='text/javascript'>
