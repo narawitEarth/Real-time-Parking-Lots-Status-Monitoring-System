@@ -78,7 +78,7 @@ padding: 8px 0;
 .sidenav a {
 padding: 6px 8px 6px 16px;
 text-decoration: none;
-font-size: 15x;
+font-size: 17px;
 color: black;
 display: block;
 }
