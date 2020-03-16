@@ -118,7 +118,7 @@
     iframe {
         max-width: 50% !important;
         width: 50% !important;
-        height: 50% !important;
+        height: 100% !important;
     }
 }
 </style>
