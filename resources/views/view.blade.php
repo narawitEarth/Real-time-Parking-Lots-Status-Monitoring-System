@@ -24,7 +24,7 @@
   p {font-size: 16px;}
   }
   @media only screen and (min-width: 600px){
-  .margin {margin-bottom: 45px;}
+  .margin {margin-bottom: 40px;}
   }
   @media only screen and (min-width: 600px){
   .bg-1 {
