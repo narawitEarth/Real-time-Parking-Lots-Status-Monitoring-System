@@ -13,37 +13,55 @@
 
 
   <style>
+    @media only screen and (min-width: 600px){
       body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
   }
-
+  }
+  @media only screen and (min-width: 600px){
   p {font-size: 16px;}
+  }
+  @media only screen and (min-width: 600px){
   .margin {margin-bottom: 45px;}
+  }
+  @media only screen and (min-width: 600px){
   .bg-1 {
     background-color:#48997e; /* Green */
     color: #ffffff;
   }
+  }
+  @media only screen and (min-width: 600px){
   .bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
   }
+  }
+  @media only screen and (min-width: 600px){
   .bg-3 {
     background-color: #ffffff; /* White */
     color: white;
   }
+  }
+  @media only screen and (min-width: 600px){
   .bg-4 {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
   }
+  }
+  @media only screen and (min-width: 600px){
   .container-fluid {
     padding-top: 25px;
     padding-bottom: 65px;
   }
+  }
+  @media only screen and (min-width: 600px){
 #navbar {
   background-color: white;
 }
+}
+@media only screen and (min-width: 600px){
 #navbar a {
   float: left;
   display: block;
@@ -52,17 +70,25 @@
   padding: 14px;
   text-decoration: none;
 }
+}
+@media only screen and (min-width: 600px){
 .content {
   padding: 10px;
 }
+}
+@media only screen and (min-width: 600px){
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
+}
+@media only screen and (min-width: 600px){
 .sticky + .content {
   padding-top: 60px;
 }
+}
+@media only screen and (min-width: 600px){
 .sidenav {
   width: 150px;
   position: fixed;
@@ -73,7 +99,8 @@
   overflow-x: hidden;
   padding: 8px 0;
 }
-
+}
+@media only screen and (min-width: 600px){
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -81,9 +108,11 @@
   color: black;
   display: block;
 }
-
+}
+@media only screen and (min-width: 600px){
 .sidenav a:hover {
   color: #064579;
+}
 }
 </style>
 
