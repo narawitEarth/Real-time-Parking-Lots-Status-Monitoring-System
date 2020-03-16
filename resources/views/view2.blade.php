@@ -180,7 +180,7 @@
 <div class="container-fluid bg-1 text-center "id="vd">
     <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 2</h1>
     {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ7p7TU047Y?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe> --}}
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ7p7TU047Y?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="350" height="300" src="https://www.youtube.com/embed/lJ7p7TU047Y?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 
   {{-- <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
@@ -215,7 +215,7 @@
 <div class="container-fluid bg-3 text-center" id="map">
   <h1 style="color:#2f2f2f">MAP</h1>
   {{-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="640" height="480"></iframe> --}}
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="640" height="480"></iframe>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="350" height="300"></iframe>
   </div>
 </div>
 
