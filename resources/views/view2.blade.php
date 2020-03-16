@@ -173,8 +173,8 @@
 
 <!-- First Container -->
 <div class="sidenav">
-  <a href="{{route('project.view')}}">ATADA LOT1</a>
-  <a href="{{route('project.view2')}}">ATADA LOT2</a>
+  <a href="{{route('project.view')}}">ATADA LOT1 ||</a>
+  <a href="{{route('project.view2')}}">ATADA LOT2 ||</a>
 </div>
 @foreach ($park2 as $p2)
 <div class="container-fluid bg-1 text-center "id="vd">

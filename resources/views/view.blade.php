@@ -61,7 +61,6 @@
   background-color: white;
 }
 
-@media only screen and (min-width: 600px){
 #navbar a {
   float: left;
   display: block;
@@ -69,7 +68,7 @@
   text-align: center;
   padding: 14px;
   text-decoration: none;
-}
+
 }
 @media only screen and (min-width: 600px){
 .content {
