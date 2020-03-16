@@ -116,7 +116,7 @@
 }
 @media screen and (min-width: 600px) {
     iframe {
-        max-width: 100% !important;
+        max-width: 50% !important;
         width: 50% !important;
         height: 50% !important;
     }
