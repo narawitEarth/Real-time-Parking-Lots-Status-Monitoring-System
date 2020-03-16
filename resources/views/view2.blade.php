@@ -62,6 +62,7 @@
 .sticky + .content {
   padding-top: 60px;
 }
+@media only screen and (min-width: 600px){
 .sidenav {
   width: 150px;
   position: fixed;
@@ -72,7 +73,8 @@
   overflow-x: hidden;
   padding: 8px 0;
 }
-
+}
+@media only screen and (min-width: 600px){
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -80,9 +82,11 @@
   color: black;
   display: block;
 }
-
+}
+@media only screen and (min-width: 600px){
 .sidenav a:hover {
   color: #064579;
+}
 }
   </style>
   <script type='text/javascript'>
