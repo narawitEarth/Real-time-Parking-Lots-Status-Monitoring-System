@@ -81,7 +81,6 @@ text-decoration: none;
 font-size: 17px;
 color: black;
 display: block;
-float: left;
 }
 }
 @media only screen and (min-width: 600px){
@@ -101,7 +100,6 @@ color: #064579;
   height:600px;
   border:1px solid red;
   overflow:auto;
-  text-align: center;
 
 }
 </style>
@@ -291,7 +289,7 @@ color: #064579;
     <h1 style="color:white">Data logger</h1>
     <div id="scroll_demo">
         <div>
-        <table id='ee'class="table table-bordered" style="font-size:1.5ch">
+        <table id='ee'class="table table-bordered text-center" style="font-size:1.5ch">
             <thead>
              <tr>
                <th> ID </th>
