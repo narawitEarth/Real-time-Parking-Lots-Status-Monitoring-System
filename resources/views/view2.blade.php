@@ -102,6 +102,13 @@
   overflow:auto;
 
 }
+
+#parentDiv{
+  width:115px;
+  height:100px;
+  overflow:auto;
+  border: 2px black solid;
+}
   </style>
 
 <script text="text/javascript">
@@ -310,8 +317,30 @@
 <!-- Footer -->
 <footer class="container-fluid bg-2 text-center">
   <p><a href=""></a></p>
+
+
+  <div id="parentDiv">
+    <div class="people">1</div>
+    <div class="people">2</div>
+    <div class="people">3</div>
+    <div class="people">4</div>
+    <div class="people">5</div>
+    <div class="people">6</div>
+    <div class="people">7</div>
+    <div class="people">8</div>
+    <div class="people">9</div>
+  </div>
+
+
 </footer>
 
+<script>
+
+    $(document).ready(function(){
+	$('#parentDiv').scrollTop($('#parentDiv')[0].scrollHeight);
+
+    });
+</script>
 
 <script>
     function myFunction() {
