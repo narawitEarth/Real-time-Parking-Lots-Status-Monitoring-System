@@ -98,7 +98,7 @@ color: #064579;
 #scroll_demo {
   width:600px;
   height:600px;
-  border:1px solid red;
+  border:1px solid white;
   overflow:auto;
 
 }
