@@ -95,17 +95,22 @@ color: #064579;
         height: 350px !important;
     }
 }
-table {
+#tablee table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
 }
 
-th, td {
+#thh th {
   text-align: left;
   padding: 8px;
 }
+#tdd td {
+  text-align: left;
+  padding: 8px;
+}
+#trr tr:nth-child(even){background-color: #f2f2f2}
 </style>
 
  <script type='text/javascript'>
@@ -288,62 +293,16 @@ th, td {
 <div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
     <div style="overflow-x:auto;">
-        <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
-            <th>Points</th>
+        <table id="tablee">
+          <tr id="trr">
+            <th id="thh">ID</th>
+            <th id="thh">DETECT</th>
+            <th id="thh">TIME</th>
           </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
-            <td>67</td>
+          <tr id="trr">
+            <td id="tdd"></td>
+            <td id="tdd"></td>
+            <td id="tdd"></td>
           </tr>
         </table>
       </div>
