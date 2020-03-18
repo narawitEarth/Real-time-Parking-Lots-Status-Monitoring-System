@@ -81,6 +81,7 @@ text-decoration: none;
 font-size: 17px;
 color: black;
 display: block;
+float: left;
 }
 }
 @media only screen and (min-width: 600px){
@@ -100,6 +101,8 @@ color: #064579;
   height:600px;
   border:1px solid red;
   overflow:auto;
+  text-align: center;
+
 }
 </style>
 
