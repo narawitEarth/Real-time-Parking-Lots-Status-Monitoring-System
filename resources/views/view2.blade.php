@@ -105,8 +105,8 @@
   </style>
 
 <script>
-    var objDiv = document.getElementById("scroll_demo");
-    objDiv.scrollTop = objDiv.scrollHeight;
+    var element = document.getElementById("scroll_demo");
+    element.scrollTop = element.scrollHeight ;
 </script>
 
   <script type='text/javascript'>
