@@ -95,6 +95,13 @@
         height: 350px !important;
     }
 }
+#scroll_demo {
+  width:600px;
+  height:600px;
+  border:1px solid white;
+  overflow:auto;
+
+}
   </style>
   <script type='text/javascript'>
     $(document).ready(function(){
