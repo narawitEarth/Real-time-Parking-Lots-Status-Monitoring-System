@@ -38,7 +38,7 @@ class tarcontroller extends Controller
         exit;
     }
     public function logData(){
-        $logA['data'] = project::orderBy('id','desc')->paginate(8);
+        $logA['data'] = project::orderBy('id','desc')->limit(8)->get();
         // return view('view',[
         //     'park' => $parking
         // ]);

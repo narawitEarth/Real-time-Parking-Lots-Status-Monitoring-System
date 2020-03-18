@@ -297,7 +297,7 @@ color: #064579;
 {{-- fourth (Grid) --}}
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <table border='1' id='ee' style='border-collapse: collapse;'>
+    <table id='ee' style='border-collapse: collapse;'>
         <thead>
          <tr>
            <th>ID</th>
