@@ -96,8 +96,8 @@ color: #064579;
     }
 }
 #scroll_demo {
-  width:80%;
-  height:50%;
+  width:300px;
+  height:300px;
   border:1px solid red;
   overflow:auto;
 }
