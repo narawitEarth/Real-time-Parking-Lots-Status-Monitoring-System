@@ -124,7 +124,7 @@ color: #064579;
              var detect = response['data'][i].detect;
 
              var tr_str = "<tr>" +
-                 "<td align='center'>จำนนวนที่จอดรถ 7 ที่ว่าง " + detect + " ที่</td>" +
+                 "<td align='center'>จำนวนที่จอดรถ 7 ที่ว่าง " + detect + " ที่</td>" +
              "</tr>";
 
              $("#userTable tbody").append(tr_str);
