@@ -230,7 +230,7 @@ color: #064579;
 </div>
 {{-- fourth (Grid) --}}
 <div class="container-fluid bg-4 text-center" id="datalog">
-    <h1 style="color:#2f2f2f">แผนที่</h1>
+    <h1 style="color:white">แผนที่</h1>
     </div>
   </div>
 
