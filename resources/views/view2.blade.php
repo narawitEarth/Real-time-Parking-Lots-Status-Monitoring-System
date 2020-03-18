@@ -106,7 +106,7 @@
 
 <script>
     var element = document.getElementById("scroll_demo");
-    element.scrollTop = element.scrollheight ;
+    element.scrollTop = element.scrollHeight - element.clientHeight;
 </script>
 
   <script type='text/javascript'>
