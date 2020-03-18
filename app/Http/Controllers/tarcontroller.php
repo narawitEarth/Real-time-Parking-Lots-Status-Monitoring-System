@@ -37,5 +37,13 @@ class tarcontroller extends Controller
         echo json_encode($parkingB);
         exit;
     }
+    public function logData(){
+        $logA['data'] = project::orderBy('id','desc')->paginate(8);
+        // return view('view',[
+        //     'park' => $parking
+        // ]);
+        echo json_encode($logA);
+        exit;
+    }
 
 }

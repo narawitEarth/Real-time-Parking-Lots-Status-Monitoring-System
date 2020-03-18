@@ -166,31 +166,34 @@ color: #064579;
    {{-- //////////////////////////////data log///////////////////////////////// --}}
    <script type='text/javascript'>
     $(document).ready(function(){
-     setInterval(fetchRecords, 3000);
+     setInterval(log, 3000);
     });
 
-    function fetchRecords(){
+    function log(){
       $.ajax({
-        url: 'post-data/',
+        url: 'log-data/',
         type: 'get',
         dataType: 'json',
         success: function(response){
 
           var len = 0;
-          $('#userTable tbody').empty(); // Empty <tbody>
+          $('#ee tbody').empty(); // Empty <tbody>
           if(response['data'] != null){
             len = response['data'].length;
           }
 
           if(len > 0){
             for(var i=0; i<len; i++){
+              var id = response['data'][i].id;
               var detect = response['data'][i].detect;
-
+              var time = response['data'][i].time;
               var tr_str = "<tr>" +
-                  "<td align='center'>จำนวนที่จอดรถ 7 ที่ว่าง " + detect + " ที่</td>" +
+                  "<td align='center'>" + id + " ที่</td>" +
+                  "<td align='center'>" + detect + " ที่</td>" +
+                  "<td align='center'>" + time + " ที่</td>" +
               "</tr>";
 
-              $("#userTable tbody").append(tr_str);
+              $("#ee tbody").append(tr_str);
             }
           }else if(response['data'] != null){
              var tr_str = "<tr>" +
@@ -198,13 +201,13 @@ color: #064579;
                  "<td align='center'>"+response['data'].detect +"</td>" +
              "</tr>";
 
-             $("#userTable tbody").append(tr_str);
+             $("#ee tbody").append(tr_str);
           }else{
              var tr_str = "<tr>" +
                  "<td align='center' colspan='4'>No record found.</td>" +
              "</tr>";
 
-             $("#userTable tbody").append(tr_str);
+             $("#ee tbody").append(tr_str);
           }
           //setTimeout(update, 5000);
         }
@@ -294,18 +297,16 @@ color: #064579;
 {{-- fourth (Grid) --}}
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
-        <table id="ee">
-          <tr>
-            <th>ID</th>
-            <th>DETECT</th>
-            <th>TIME</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+    <table border='1' id='ee' style='border-collapse: collapse;'>
+        <thead>
+         <tr>
+           <th>ID</th>
+           <th>DETECT</th>
+           <th>TIME</th>
+         </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 </div>
 
 <!-- Footer -->
