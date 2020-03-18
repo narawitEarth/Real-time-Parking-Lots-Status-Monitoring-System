@@ -123,7 +123,7 @@
               var detect = response['data'][i].detect;
 
               var tr_str = "<tr>" +
-                  "<td align='center'>จำนวนที่จอดรถ 3 ที่ว่าง " + detect + " </td>" +
+                  "<td align='center'>จำนวนที่จอดรถ 3 ที่ว่าง " + detect + " ที่</td>" +
               "</tr>";
 
               $("#userTable tbody").append(tr_str);
