@@ -146,7 +146,7 @@ color: #064579;
    </script>
 
    {{-- //////////////////////////////data log///////////////////////////////// --}}
-   {{-- <script type='text/javascript'>
+   <script type='text/javascript'>
     $(document).ready(function(){
      setInterval(fetchRecords, 3000);
     });
@@ -192,7 +192,7 @@ color: #064579;
         }
       });
     }
-    </script> --}}
+    </script>
 </head>
 <body>
 
@@ -286,8 +286,7 @@ color: #064579;
         </thead>
         <tbody></tbody>
        </table>
-    </div>
-  </div>
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-2 text-center">
