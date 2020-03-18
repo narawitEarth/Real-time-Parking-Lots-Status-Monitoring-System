@@ -294,7 +294,7 @@ color: #064579;
              <tr>
                <th> ID </th>
                <th> DETECT </th>
-               <th> TIME </th>
+               <th style="test-align:center"> TIME </th>
              </tr>
             </thead>
             <tbody></tbody>
