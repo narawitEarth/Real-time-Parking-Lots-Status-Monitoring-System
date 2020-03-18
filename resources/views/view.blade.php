@@ -282,11 +282,11 @@ color: #064579;
     <h1 style="color:white">Data logger</h1>
     <div>
         <table id='ee'class="table table-bordered" style="font-size:1.5ch">
-            <thead class="text-center">
+            <thead>
              <tr>
-               <th> ID </th>
-               <th> DETECT </th>
-               <th> TIME </th>
+               <th class="text-align:center" style="text-align:cente"> ID </th>
+               <th class="text-align:cente"> DETECT </th>
+               <th class="text-align:cente"> TIME </th>
              </tr>
             </thead>
             <tbody></tbody>
