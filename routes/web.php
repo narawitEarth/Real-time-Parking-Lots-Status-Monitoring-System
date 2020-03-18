@@ -17,6 +17,7 @@ Route::get('view2','tarcontroller@view2')->name('project.view2');;
 Route::get('/post-data','tarcontroller@postData')->name('postData');
 Route::get('/post-data2','tarcontroller@postData2')->name('postData2');
 Route::get('/log-data','tarcontroller@logData')->name('logData');
+Route::get('/log-data2','tarcontroller@logData2')->name('logData2');
 // Route::post('/post-data','tarcontroller@postData')->name('postData');
 // Route::resource('/view','tarcontroller');
 

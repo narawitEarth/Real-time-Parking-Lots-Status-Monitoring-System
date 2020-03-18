@@ -147,6 +147,60 @@
       });
     }
     </script>
+    {{-- //////////////////////////////data log///////////////////////////////// --}}
+   <script type='text/javascript'>
+    $(document).ready(function(){
+     setInterval(log, 3000);
+    });
+
+    function log(){
+      $.ajax({
+        url: 'log-data2/',
+        type: 'get',
+        dataType: 'json',
+        success: function(response){
+
+          var len = 0;
+          $('#ee tbody').empty(); // Empty <tbody>
+          if(response['data'] != null){
+            len = response['data'].length;
+          }
+
+          if(len > 0){
+            for(var i=0; i<len; i++){
+              var id = response['data'][i].id;
+              var detect = response['data'][i].detect;
+              var time = response['data'][i].time;
+              var tr_str = "<tr>" +
+                  "<td align='center'>" + id + " </td>" +
+                  "<td align='center'>" + detect + " </td>" +
+                  "<td align='center'>" + time + " </td>" +
+              "</tr>";
+
+              $("#ee tbody").append(tr_str);
+            }
+          }else if(response['data'] != null){
+             var tr_str = "<tr>" +
+                 "<td align='center'></td>" +
+                 "<td align='center'>"+response['data'].detect +"</td>" +
+             "</tr>";
+
+             $("#ee tbody").append(tr_str);
+          }else{
+             var tr_str = "<tr>" +
+                 "<td align='center' colspan='4'>No record found.</td>" +
+             "</tr>";
+
+             $("#ee tbody").append(tr_str);
+          }
+          //setTimeout(update, 5000);
+        }
+      });
+    }
+    </script>
+</head>
+<body>
+
 </head>
 <body>
 <!-- Navbar -->
@@ -216,6 +270,26 @@
   {{-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="640" height="480"></iframe> --}}
   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kk3W9eJ7fJlOJXkBqLK50d2HNmPUeB_o" width="350" height="300"></iframe>
   </div>
+</div>
+
+{{-- fourth (Grid) --}}
+
+<div class="container-fluid bg-4 text-center" id="datalog">
+    <h1 style="color:white">Data logger</h1>
+    <div id="scroll_demo" class="container-fluid bg-4 text-center">
+        <div>
+        <table id='ee'class="table table-bordered" style="font-size:1.5ch">
+            <thead>
+             <tr>
+               <th> ID </th>
+               <th> DETECT </th>
+               <th> TIME </th>
+             </tr>
+            </thead>
+            <tbody></tbody>
+           </table>
+        </div>
+    </div>
 </div>
 
 <!-- Footer -->
