@@ -290,9 +290,9 @@ color: #064579;
   </div>
 </div>
 {{-- fourth (Grid) --}}
-<div class="container-fluid bg-4 text-center" id="datalog">
+<div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div style="overflow-x:auto;" class="center">
+    <div>
         <table id="ee">
           <tr>
             <th>ID</th>
