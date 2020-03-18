@@ -292,7 +292,7 @@ color: #064579;
 {{-- fourth (Grid) --}}
 <div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div style="overflow-x:auto;" clss="text-center">
+    <div style="overflow-x:auto;" class="text-center">
         <table id="ee">
           <tr>
             <th>ID</th>
