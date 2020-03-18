@@ -103,6 +103,12 @@
 
 }
   </style>
+
+<script>
+    var objDiv = document.getElementById("scroll_demo");
+    objDiv.scrollTop = objDiv.scrollHeight;
+</script>
+
   <script type='text/javascript'>
     $(document).ready(function(){
      setInterval(fetchRecords, 3000);
