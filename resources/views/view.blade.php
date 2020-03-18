@@ -188,9 +188,9 @@ color: #064579;
               var detect = response['data'][i].detect;
               var time = response['data'][i].time;
               var tr_str = "<tr>" +
-                  "<td align='center'>" + id + " ที่</td>" +
-                  "<td align='center'>" + detect + " ที่</td>" +
-                  "<td align='center'>" + time + " ที่</td>" +
+                  "<td align='center'>" + id + " </td>" +
+                  "<td align='center'>" + detect + " </td>" +
+                  "<td align='center'>" + time + " </td>" +
               "</tr>";
 
               $("#ee tbody").append(tr_str);
@@ -295,9 +295,11 @@ color: #064579;
   </div>
 </div>
 {{-- fourth (Grid) --}}
+
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <table id='ee' style='border-collapse: collapse;' class="text-center">
+    <div class="text-center" style="width: 400px; height: 150px; overflow-y: scroll; scrollbar-arrow-color:blue; scrollbar-face-color: #e7e7e7; scrollbar-3dlight-color: #a0a0a0; scrollbar-darkshadow-color:#888888">
+    <table id='ee' style='border-collapse: collapse;'>
         <thead>
          <tr>
            <th>ID</th>
@@ -307,6 +309,7 @@ color: #064579;
         </thead>
         <tbody></tbody>
       </table>
+    </div>
 </div>
 
 <!-- Footer -->
