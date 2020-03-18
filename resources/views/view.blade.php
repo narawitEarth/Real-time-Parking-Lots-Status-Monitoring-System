@@ -97,20 +97,22 @@ color: #064579;
 }
 #ee table {
   /* border-collapse: collapse;
-  border-spacing: 0; */
+  border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; */
 }
 
 #ee th {
-  text-align: left;
-  padding: 8px;
+  /* text-align: left;
+  padding: 8px; */
 }
 #ee td {
-  text-align: left;
-  padding: 8px;
+  /* text-align: left;
+  padding: 8px; */
 }
-#ee tr:nth-child(even){background-color: #f2f2f2}
+#ee tr:nth-child(even){
+    /* ackground-color: #f2f2f2 */
+    }
 </style>
 
  <script type='text/javascript'>
