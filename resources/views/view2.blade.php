@@ -105,8 +105,12 @@
   </style>
 
 <script>
-    var element = document.getElementById("scroll");
-    element.scrollTop = element.scrollHeight - element.clientHeight;
+    window.onload=function () {
+     var objDiv = document.getElementById("scroll");
+     objDiv.scrollTop = objDiv.scrollHeight;
+    }
+    // var element = document.getElementById("scroll");
+    // element.scrollTop = element.scrollHeight - element.clientHeight;
 </script>
 
   <script type='text/javascript'>
