@@ -281,7 +281,7 @@ color: #064579;
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
     <div>
-        <table id='ee'class="container-fluid bg-2 text-center table table-striped" style="font-size:1.5ch">
+        <table id='ee'class="table table-striped" style="font-size:1.5ch">
             <thead>
              <tr>
                <th> ID </th>
