@@ -293,7 +293,7 @@ color: #064579;
 <div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
     <div style="overflow-x:auto;">
-        <table id="ee">
+        <table id="ee" class="text-center">
           <tr>
             <th>ID</th>
             <th>DETECT</th>
