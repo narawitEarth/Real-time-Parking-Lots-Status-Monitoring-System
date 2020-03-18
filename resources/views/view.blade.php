@@ -298,17 +298,17 @@ color: #064579;
 
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div class="text-center" style="width: 400px; height: 150px; overflow-y: scroll; scrollbar-arrow-color:blue; scrollbar-face-color: #e7e7e7; scrollbar-3dlight-color: #a0a0a0; scrollbar-darkshadow-color:#888888">
-    <table id='ee' style='border-collapse: collapse;'>
-        <thead>
-         <tr>
-           <th>ID</th>
-           <th>DETECT</th>
-           <th>TIME</th>
-         </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <div>
+        <table id='ee'class="container-fluid bg-1 text-center" style="font-size:2ch">
+            <thead>
+             <tr>
+               <th> ID </th>
+               <th> DETECT </th>
+               <th> TIME </th>
+             </tr>
+            </thead>
+            <tbody></tbody>
+           </table>
     </div>
 </div>
 
