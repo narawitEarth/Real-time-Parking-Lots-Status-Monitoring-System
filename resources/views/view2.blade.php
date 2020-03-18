@@ -104,11 +104,11 @@
 }
   </style>
 
-<script>
+<script text="text/javascript">
     $(document).ready(function(){
 	$('#scroll').scrollTop($('#scroll')[0].scrollHeight);
 
-});
+    });
 </script>
 
   <script type='text/javascript'>
