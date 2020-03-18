@@ -298,7 +298,7 @@
 
 <div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div id="scroll" class="bg-4 text-center">
+    <div id="parentDiv" >
         <div>
         <table id='ee'class="table table-bordered" style="font-size:1.5ch">
             <thead>
