@@ -95,10 +95,10 @@ color: #064579;
         height: 350px !important;
     }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
 #scroll_demo {
-  width:500px;
-  height:500px;
+  width:400px;
+  height:400px;
   border:1px solid white;
   overflow:auto;
 }
