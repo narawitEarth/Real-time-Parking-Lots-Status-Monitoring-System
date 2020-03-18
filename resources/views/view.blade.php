@@ -96,8 +96,8 @@ color: #064579;
     }
 }
 #ee table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  /* border-collapse: collapse;
+  border-spacing: 0; */
   width: 100%;
   border: 1px solid #ddd;
 }
@@ -292,7 +292,6 @@ color: #064579;
 {{-- fourth (Grid) --}}
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div>
         <table id="ee">
           <tr>
             <th>ID</th>
@@ -305,7 +304,6 @@ color: #064579;
             <td></td>
           </tr>
         </table>
-      </div>
 </div>
 
 <!-- Footer -->
