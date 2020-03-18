@@ -95,6 +95,12 @@ color: #064579;
         height: 350px !important;
     }
 }
+#scroll_demo {
+  width:100px;
+  height:100px;
+  border:1px solid red;
+  overflow:auto;
+}
 </style>
 
  <script type='text/javascript'>
@@ -280,13 +286,13 @@ color: #064579;
 
 <div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div>
+    <div id="scroll_demo">
         <table id='ee'class="table table-bordered" style="font-size:1.5ch">
             <thead>
              <tr>
-               <th class="text-align:center" style="text-align:cente"> ID </th>
-               <th class="text-align:cente"> DETECT </th>
-               <th class="text-align:cente"> TIME </th>
+               <th> ID </th>
+               <th> DETECT </th>
+               <th> TIME </th>
              </tr>
             </thead>
             <tbody></tbody>
