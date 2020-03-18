@@ -104,10 +104,12 @@
 }
   </style>
 
-<script text="text/javascript">
-    $(document).ready(function(){
-	$('#scroll').scrollTop($("#scroll").height());
-    });
+<script>
+   $(document).ready(function(){
+	var element = document.getElementById("scroll");
+    element.scrollTop = element.scrollHeight - element.clientHeight;
+
+});
 </script>
 
   <script type='text/javascript'>
