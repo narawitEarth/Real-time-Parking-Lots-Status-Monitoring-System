@@ -95,7 +95,7 @@
         height: 350px !important;
     }
 }
-#scroll_demo {
+#scroll {
   width:600px;
   height:600px;
   border:1px solid white;
@@ -105,7 +105,7 @@
   </style>
 
 <script>
-    var element = document.getElementById("scroll_demo");
+    var element = document.getElementById("scroll");
     element.scrollTop = element.scrollHeight - element.clientHeight;
 </script>
 
@@ -289,7 +289,7 @@
 
 <div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
-    <div id="scroll_demo" class="container-fluid bg-4 text-center">
+    <div id="scroll" class="container-fluid bg-4 text-center">
         <div>
         <table id='ee'class="table table-bordered" style="font-size:1.5ch">
             <thead>
