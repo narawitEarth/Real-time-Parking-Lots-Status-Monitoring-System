@@ -278,11 +278,11 @@ color: #064579;
 </div>
 {{-- fourth (Grid) --}}
 
-<div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
+<div class="container-fluid bg-4 text-center" id="datalog">
     <h1 style="color:white">Data logger</h1>
     <div>
         <table id='ee'class="table table-bordered" style="font-size:1.5ch">
-            <thead>
+            <thead class="text-center">
              <tr>
                <th> ID </th>
                <th> DETECT </th>
