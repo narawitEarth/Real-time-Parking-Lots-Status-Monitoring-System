@@ -95,24 +95,6 @@ color: #064579;
         height: 350px !important;
     }
 }
-#ee table {
-  /* border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd; */
-}
-
-#ee th {
-  /* text-align: left;
-  padding: 8px; */
-}
-#ee td {
-  /* text-align: left;
-  padding: 8px; */
-}
-#ee tr:nth-child(even){
-    /* ackground-color: #f2f2f2 */
-    }
 </style>
 
  <script type='text/javascript'>
@@ -299,12 +281,12 @@ color: #064579;
 <div class="container-fluid bg-4 text-center" style="overflow-x:auto" id="datalog">
     <h1 style="color:white">Data logger</h1>
     <div>
-        <table id='ee'class="container-fluid bg-2 text-center" style="font-size:1.5ch">
+        <table id='ee'class="container-fluid bg-2 text-center table table-striped" style="font-size:1.5ch">
             <thead>
              <tr>
                <th> ID </th>
                <th> DETECT </th>
-               <th style="margin-left:5cm"> TIME </th>
+               <th> TIME </th>
              </tr>
             </thead>
             <tbody></tbody>
