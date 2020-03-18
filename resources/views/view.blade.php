@@ -100,10 +100,6 @@ color: #064579;
  <script type='text/javascript'>
    $(document).ready(function(){
     setInterval(fetchRecords, 3000);
-     // Fetch all records
-//      $('#but_fetchall').click(function(){
-  //  fetchRecords();
-//      });
    });
 
    function fetchRecords(){
@@ -148,6 +144,55 @@ color: #064579;
      });
    }
    </script>
+
+   {{-- //////////////////////////////data log///////////////////////////////// --}}
+   {{-- <script type='text/javascript'>
+    $(document).ready(function(){
+     setInterval(fetchRecords, 3000);
+    });
+
+    function fetchRecords(){
+      $.ajax({
+        url: 'post-data/',
+        type: 'get',
+        dataType: 'json',
+        success: function(response){
+
+          var len = 0;
+          $('#userTable tbody').empty(); // Empty <tbody>
+          if(response['data'] != null){
+            len = response['data'].length;
+          }
+
+          if(len > 0){
+            for(var i=0; i<len; i++){
+              var detect = response['data'][i].detect;
+
+              var tr_str = "<tr>" +
+                  "<td align='center'>จำนวนที่จอดรถ 7 ที่ว่าง " + detect + " ที่</td>" +
+              "</tr>";
+
+              $("#userTable tbody").append(tr_str);
+            }
+          }else if(response['data'] != null){
+             var tr_str = "<tr>" +
+                 "<td align='center'></td>" +
+                 "<td align='center'>"+response['data'].detect +"</td>" +
+             "</tr>";
+
+             $("#userTable tbody").append(tr_str);
+          }else{
+             var tr_str = "<tr>" +
+                 "<td align='center' colspan='4'>No record found.</td>" +
+             "</tr>";
+
+             $("#userTable tbody").append(tr_str);
+          }
+          //setTimeout(update, 5000);
+        }
+      });
+    }
+    </script> --}}
 </head>
 <body>
 
@@ -230,7 +275,17 @@ color: #064579;
 </div>
 {{-- fourth (Grid) --}}
 <div class="container-fluid bg-4 text-center" id="datalog">
-    <h1 style="color:white">แผนที่</h1>
+    <h1 style="color:white">Data logger</h1>
+    <table id='datalog'class="container-fluid bg-1 text-center" style="font-size:2ch">
+        <thead>
+         <tr>
+           <th>ID</th>
+           <th>DETECT</th>
+           <th>TIME</th>
+         </tr>
+        </thead>
+        <tbody></tbody>
+       </table>
     </div>
   </div>
 
