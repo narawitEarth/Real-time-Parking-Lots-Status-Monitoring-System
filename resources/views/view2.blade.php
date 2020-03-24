@@ -95,12 +95,14 @@
         height: 350px !important;
     }
 }
+@media screen and (min-width: 700px) {
 #scroll {
   width:600px;
   height:600px;
   border:1px solid white;
   overflow:auto;
 
+}
 }
   </style>
 
