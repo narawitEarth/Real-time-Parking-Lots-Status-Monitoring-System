@@ -97,8 +97,8 @@ color: #064579;
 }
 @media screen and (min-width: 600px) {
 #scroll_demo {
-  width:300px;
-  height:300px;
+  width:400px;
+  height:400px;
   border:1px solid white;
   overflow:auto;
 }
