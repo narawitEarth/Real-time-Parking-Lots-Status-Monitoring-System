@@ -154,7 +154,6 @@ color: #064579;
    </script>
 
    {{-- //////////////////////////////data log///////////////////////////////// --}}
-   @media screen and (min-width: 700px) {
    <script type='text/javascript'>
     $(document).ready(function(){
      setInterval(log, 3000);
@@ -203,7 +202,6 @@ color: #064579;
           //setTimeout(update, 5000);
         }
       });
-    }
     }
     </script>
 </head>
