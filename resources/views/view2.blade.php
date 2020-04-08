@@ -237,6 +237,7 @@
          <li><a href="#vd" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO</a></li>
         <li><a href="#jq" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CHATBOT</a></li>
         <li><a href="#map" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MAP</a></li>
+        <li><a href="#datalog" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DATA LOG</a></li>
       </ul>
     </div>
   </div>
