@@ -251,7 +251,7 @@
 <div class="container-fluid bg-1 text-center "id="vd">
     <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 2</h1>
     {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ7p7TU047Y?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe> --}}
-    <iframe width="350" height="300" src="https://www.youtube.com/embed/oxXfmBU_zBg?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="350" height="300" src="https://www.youtube.com/embed/sjUkc4iOlWM?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 
   {{-- <video width="700" height="400" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
