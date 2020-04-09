@@ -239,7 +239,7 @@ color: #064579;
 @foreach ($park as $p)
 <div class="container-fluid bg-1 text-center" id="vd">
     <h1 class="margin" style="font-size:1cm">ลานจอดรถหอพัก ATADA 1</h1>
-    <iframe width="350" height="300" src="https://www.youtube.com/embed/OEQ7-5sEmtE?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="350" height="300" src="https://www.youtube.com/embed/MJlO3tA39bM?channel=UCV1aXH_T6lQ-il9ewg9NMxg&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
   {{-- <video width="500" height="300" autoplay="autoplay">
         <source src="assets\img\upload\vdo.mp4"  />
   </video> --}}
